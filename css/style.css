@@ -1,0 +1,326 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+.ma-navbar {
+    background: #003366;
+    color: #fff;
+    padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px #0002;
+}
+.ma-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+.ma-brand {
+    font-size: 1.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.ma-menu {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+}
+.ma-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+.ma-menu li a:hover {
+    color: #ffd700;
+}
+
+#accueil {
+    margin-top: 80px;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+}
+#accueil .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#accueil h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+#accueil h2 {
+    font-size: 1.5rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+#accueil .btn {
+    font-size: 1.1rem;
+    padding: 12px 28px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+#accueil .col-lg-6:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#accueil img {
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 18px #0001;
+    object-fit: cover;
+    background: #fff;
+}
+
+#competences {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+}
+#competences h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+#competences h3 {
+    color: #34495e;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    margin-top: 35px;
+    font-size: 1.4rem;
+}
+.grille-competences {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 18px;
+    margin: 25px 0;
+}
+
+.competence {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s, transform 0.6s;
+    border-radius: 7px;
+    padding: 16px 8px;
+    text-align: center;
+    font-weight: 600;
+}
+.competence.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.competence.shake {
+    animation: shake 0.5s;
+}
+
+.competence.html {
+    background: #e44d26;
+    color: #fff;
+    border-bottom: 2px solid #b7410e;
+}
+.competence.css {
+    background: #264de4;
+    color: #fff;
+    border-radius: 7px 7px 0 0;
+    box-shadow: 1px 2px 6px #264de455;
+}
+.competence.js {
+    background: #f7df1e;
+    color: #222;
+    font-style: italic;
+    border: 1px dashed #bfa700;
+}
+.competence.bootstrap {
+    background: #563d7c;
+    color: #fff;
+    border-left: 4px solid #fff;
+}
+.competence.react {
+    background: #61dafb;
+    color: #222;
+    box-shadow: 0 2px 8px #61dafb33;
+}
+.competence.vue {
+    background: #42b883;
+    color: #fff;
+    border-right: 3px solid #35495e;
+}
+.competence.responsive {
+    background: #3a7bd5;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.competence.node {
+    background: #68a063;
+    color: #fff;
+    border-bottom: 2px solid #3c873a;
+}
+.competence.php {
+    background: #777bb3;
+    color: #fff;
+    border-top: 2px solid #fff;
+}
+.competence.mysql {
+    background: #f29111;
+    color: #fff;
+    box-shadow: 1px 2px 6px #f2911133;
+}
+.competence.mongo {
+    background: #4db33d;
+    color: #fff;
+    border: 1px dashed #357a38;
+}
+.competence.api {
+    background: #6e5494;
+    color: #fff;
+    border-left: 3px solid #fff;
+}
+.competence.git {
+    background: #f05032;
+    color: #fff;
+    border-bottom: 2px solid #b93d1c;
+}
+.competence.github {
+    background: #24292e;
+    color: #fff;
+    border-right: 3px solid #fff;
+}
+.competence.agile {
+    background: #1a508b;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.competence.figma {
+    background: #a259ff;
+    color: #fff;
+    border-top: 2px solid #fff;
+}
+.competence.photoshop {
+    background: #31a8ff;
+    color: #fff;
+    box-shadow: 1px 2px 6px #31a8ff33;
+}
+
+.card-img-top {
+    max-width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.photo-profil {
+    max-width: 700px;
+    width: 100%;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 2px 12px #0002;
+}
+
+@media (max-width: 1200px) {
+    #accueil .container, #competences {
+        max-width: 95vw;
+        padding: 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    #accueil {
+        margin-top: 110px;
+        min-height: 70vh;
+        flex-direction: column;
+        text-align: center;
+    }
+    #accueil .row {
+        flex-direction: column;
+    }
+    #accueil h1 {
+        font-size: 2rem;
+    }
+    #accueil img {
+        max-width: 220px;
+        width: 80vw;
+    }
+    #accueil .col-lg-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #accueil .col-lg-6:last-child {
+        margin-bottom: 0;
+    }
+    #competences h2 {
+        font-size: 1.5rem;
+    }
+    #competences h3 {
+        font-size: 1.1rem;
+    }
+    .grille-competences {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+    }
+    .competence {
+        font-size: 0.95rem;
+        padding: 12px 4px;
+    }
+}
+
+@media (max-width: 700px) {
+    .ma-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+    .ma-menu {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: flex-start;
+    }
+    #accueil {
+        margin-top: 120px;
+        min-height: 60vh;
+        padding: 10px 0;
+    }
+    #accueil h1 {
+        font-size: 1.3rem;
+    }
+    #accueil h2 {
+        font-size: 1rem;
+    }
+    #accueil img {
+        max-width: 120px;
+        width: 90vw;
+    }
+    .grille-competences {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        gap: 6px;
+    }
+    .competence {
+        font-size: 0.8rem;
+        padding: 8px 2px;
+    }
+    #competences {
+        padding: 10px;
+    }
+} 
